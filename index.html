@@ -212,3 +212,90 @@ HTML -
             </div>
     </div>
 </div>
+<!-- I used the bootstrap grid to assist me in structuring the code below -->
+
+<div class="container" id="contact">
+    <div class="row contact">
+        <div class="col-2"></div>
+        <div class="col-12 col-md-8">
+        
+            <h1 class="col-12 contact-heading">Contact</h1>
+            
+<!-- I used the bootstrap forms layout to assist me in structuring the code below -->
+
+            <form class="needs-validation">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <label for="firstName">Full name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                        Please enter your full name.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="email">Email </label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                        <div class="invalid-feedback">
+                            Please enter your email. 
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="message">Message </label>
+                        <textarea class="form-control" id="message" required=""> </textarea>
+                        <div class="invalid-feedback">
+                            Please enter your message.
+                        </div>      
+                    </div>
+                
+                     <hr class="mb-4">
+                    <div class="col-6 col-md-3">
+                        <br>
+                        <button class="btn btn-primary btn btn-dark" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+<!-- For the footer, I used both Code Institute course material, and the following to assist https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+
+    <footer class="bg-dark text-center text-white">
+ 
+        
+  <div class="text-center p-3">
+      <div style="float: right; font-size:small">copyright 2021 © Ibiza Life</div>
+    <ul class="list-inline social-links">
+                    
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://facebook.com">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                   
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://instagram.com">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                             <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+  </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
