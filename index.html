@@ -1,5 +1,3 @@
-HTML -
-
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
@@ -61,9 +59,18 @@ HTML -
 <!-- I used the bootstrap grid to assist me in structuring the code below -->
     
 <div class="container" id="home">
+
+
+<h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+
+
     <div class="row featurette">
         <div class="col-12 col-md-7">
-            <h2 class="featurette-heading">Hello and welcome to Ibiza Life! </h2>
+            <h2 class="featurette-heading">iHello and welcome to Ibiza Life! </h2>
             <p class="lead">Whether it is golden beaches, the burning sun, gorgeous warm air, beautiful blue waters, live bands, superstar DJs, clubs the size of cathedrals and crowds of tanned party goers from all over the world, Ibiza has it all. 
             </p>
             <p class="lead">Together with gorgeous coastlines, sunsets, boat trips and hiking opportunities, you have the recipe for one of the most appealing and diverse islands in the world.  </p>
@@ -211,6 +218,7 @@ HTML -
             </div>
             </div>
     </div>
+    <div id="map"> </div>
 </div>
 <!-- I used the bootstrap grid to assist me in structuring the code below -->
 
@@ -296,6 +304,21 @@ HTML -
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+<script>
+function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRsgWett8BdOGnJmCzvTPzp3lhHvh1iv4&callback=myMap"></script>
+
+
+<script> var APIKey = “AIzaSyBRsgWett8BdOGnJmCzvTPzp3lhHvh1iv4” </script>
 
 </body>
 </html>
